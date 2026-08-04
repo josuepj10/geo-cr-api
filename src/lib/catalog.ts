@@ -49,6 +49,7 @@ export const catalogMetadata =
 export const cacheHeaders = {
   "Cache-Control":
     "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800",
+  "Content-Type": "application/json; charset=utf-8",
 } as const;
 
 export function getProvincias(): Provincia[] {
