@@ -1,4 +1,5 @@
 ﻿import Link from "next/link";
+import { updateStatus } from "@/lib/update-status";
 
 const endpoints = [
   {
@@ -32,7 +33,27 @@ const endpoints = [
   },
 ];
 
+function formatDate(
+  value: string | null
+): string {
+  if (!value) {
+    return "No disponible";
+  }
+
+  return new Intl.DateTimeFormat(
+    "es-CR",
+    {
+      dateStyle: "long",
+      timeStyle: "short",
+      timeZone: "America/Costa_Rica",
+    }
+  ).format(new Date(value));
+}
+
 export default function Home() {
+  const catalogIsCurrent =
+    !updateStatus.updateAvailable &&
+    updateStatus.checkResult === "success";
   return (
     <main className="min-h-screen bg-slate-950 px-6 py-16 text-white">
       <div className="mx-auto max-w-5xl">
@@ -82,6 +103,94 @@ export default function Home() {
           </div>
         </div>
 
+                <section className="mb-12 rounded-xl border border-slate-800 bg-slate-900/60 p-6">
+          <div className="flex flex-wrap items-start justify-between gap-4">
+            <div>
+              <p className="text-sm font-medium uppercase tracking-wide text-slate-400">
+                Estado del catálogo
+              </p>
+
+              <h2 className="mt-2 text-2xl font-semibold">
+                {catalogIsCurrent
+                  ? "Catálogo actualizado"
+                  : updateStatus.updateAvailable
+                    ? "Actualización oficial detectada"
+                    : "No fue posible comprobar la fuente"}
+              </h2>
+            </div>
+
+            <span
+              className={
+                catalogIsCurrent
+                  ? "rounded-full border border-emerald-400/40 bg-emerald-400/10 px-3 py-1 text-sm text-emerald-300"
+                  : updateStatus.updateAvailable
+                    ? "rounded-full border border-amber-400/40 bg-amber-400/10 px-3 py-1 text-sm text-amber-300"
+                    : "rounded-full border border-red-400/40 bg-red-400/10 px-3 py-1 text-sm text-red-300"
+              }
+            >
+              {catalogIsCurrent
+                ? "Actualizado"
+                : updateStatus.updateAvailable
+                  ? "Pendiente de revisión"
+                  : "Comprobación fallida"}
+            </span>
+          </div>
+
+          <p className="mt-4 text-sm text-slate-300">
+            {updateStatus.message}
+          </p>
+
+          <dl className="mt-6 grid gap-5 text-sm sm:grid-cols-2 lg:grid-cols-4">
+            <div>
+              <dt className="text-slate-500">
+                Versión publicada
+              </dt>
+              <dd className="mt-1 font-medium text-slate-200">
+                {updateStatus.catalogVersion}
+              </dd>
+            </div>
+
+            <div>
+              <dt className="text-slate-500">
+                Última versión detectada
+              </dt>
+              <dd className="mt-1 font-medium text-slate-200">
+                {updateStatus.latestAvailableVersion ??
+                  "No disponible"}
+              </dd>
+            </div>
+
+            <div>
+              <dt className="text-slate-500">
+                Última comprobación
+              </dt>
+              <dd className="mt-1 font-medium text-slate-200">
+                {formatDate(
+                  updateStatus.lastCheckedAt
+                )}
+              </dd>
+            </div>
+
+            <div>
+              <dt className="text-slate-500">
+                Última actualización
+              </dt>
+              <dd className="mt-1 font-medium text-slate-200">
+                {formatDate(
+                  updateStatus.lastCatalogUpdateAt
+                )}
+              </dd>
+            </div>
+          </dl>
+
+          <a
+            href="/api/v1/actualizacion"
+            className="mt-6 inline-flex text-sm font-medium text-emerald-300 hover:text-emerald-200"
+          >
+            Consultar estado en JSON →
+          </a>
+        </section>
+
         <section>
           <h2 className="text-2xl font-semibold">
             Ejemplos
@@ -117,7 +226,7 @@ export default function Home() {
 
           <pre className="mt-4 overflow-x-auto rounded-lg bg-black p-4 text-sm text-emerald-300">
             <code>
-{`const response = await fetch(
+              {`const response = await fetch(
   "https://geo-cr-api.vercel.app/api/v1/cantones/202/distritos"
 );
 
