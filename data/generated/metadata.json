@@ -1,0 +1,14 @@
+{
+  "catalogVersion": "DTA-2026",
+  "apiVersion": "v1",
+  "source": {
+    "institution": "Instituto Geográfico Nacional / Sistema Nacional de Información Territorial",
+    "dataset": "División Territorial Administrativa 2026",
+    "originalFile": "DTA-2026.xlsx"
+  },
+  "counts": {
+    "provincias": 7,
+    "cantones": 84,
+    "distritos": 494
+  }
+}
