@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "import:dta": "tsx scripts/import-dta.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "check:dta": "tsx scripts/check-dta-update.ts"
   },
   "dependencies": {
@@ -27,6 +29,7 @@
     "tailwindcss": "^4",
     "tsx": "^4.23.5",
     "typescript": "^5",
-    "xlsx": "^0.18.5"
+    "vitest": "^4.1.10",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
   }
 }
