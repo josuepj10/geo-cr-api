@@ -9,7 +9,7 @@ const jsonContent = {
 };
 
 export const openApiDocument = {
-  openapi: "3.1.0",
+  openapi: "3.0.3",
   info: {
     title: "Geo CR API",
     version: "0.2.0",
