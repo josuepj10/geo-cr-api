@@ -9,7 +9,8 @@
     "lint": "eslint",
     "import:dta": "tsx scripts/import-dta.ts",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "check:dta": "tsx scripts/check-dta-update.ts"
   },
   "dependencies": {
     "next": "16.3.0",
