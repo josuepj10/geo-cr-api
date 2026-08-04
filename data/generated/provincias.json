@@ -1,0 +1,37 @@
+[
+  {
+    "codigo": "1",
+    "nombre": "San José",
+    "areaKm2": 4969.758027
+  },
+  {
+    "codigo": "2",
+    "nombre": "Alajuela",
+    "areaKm2": 9772.079431
+  },
+  {
+    "codigo": "3",
+    "nombre": "Cartago",
+    "areaKm2": 3093.201522
+  },
+  {
+    "codigo": "4",
+    "nombre": "Heredia",
+    "areaKm2": 2663.33923
+  },
+  {
+    "codigo": "5",
+    "nombre": "Guanacaste",
+    "areaKm2": 10196.293812
+  },
+  {
+    "codigo": "6",
+    "nombre": "Puntarenas",
+    "areaKm2": 11298.010006
+  },
+  {
+    "codigo": "7",
+    "nombre": "Limón",
+    "areaKm2": 9176.898588
+  }
+]

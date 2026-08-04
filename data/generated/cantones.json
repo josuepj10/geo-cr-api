@@ -1,0 +1,506 @@
+[
+  {
+    "codigo": "101",
+    "nombre": "San José",
+    "provinciaCodigo": "1",
+    "areaKm2": 44.62
+  },
+  {
+    "codigo": "102",
+    "nombre": "Escazú",
+    "provinciaCodigo": "1",
+    "areaKm2": 34.53
+  },
+  {
+    "codigo": "103",
+    "nombre": "Desamparados",
+    "provinciaCodigo": "1",
+    "areaKm2": 118.91
+  },
+  {
+    "codigo": "104",
+    "nombre": "Puriscal",
+    "provinciaCodigo": "1",
+    "areaKm2": 555.02
+  },
+  {
+    "codigo": "105",
+    "nombre": "Tarrazú",
+    "provinciaCodigo": "1",
+    "areaKm2": 291.27
+  },
+  {
+    "codigo": "106",
+    "nombre": "Aserrí",
+    "provinciaCodigo": "1",
+    "areaKm2": 168.26
+  },
+  {
+    "codigo": "107",
+    "nombre": "Mora",
+    "provinciaCodigo": "1",
+    "areaKm2": 163.47
+  },
+  {
+    "codigo": "108",
+    "nombre": "Goicoechea",
+    "provinciaCodigo": "1",
+    "areaKm2": 31.7
+  },
+  {
+    "codigo": "109",
+    "nombre": "Santa Ana",
+    "provinciaCodigo": "1",
+    "areaKm2": 61.42
+  },
+  {
+    "codigo": "110",
+    "nombre": "Alajuelita",
+    "provinciaCodigo": "1",
+    "areaKm2": 21.47
+  },
+  {
+    "codigo": "111",
+    "nombre": "Vázquez de Coronado",
+    "provinciaCodigo": "1",
+    "areaKm2": 223.93
+  },
+  {
+    "codigo": "112",
+    "nombre": "Acosta",
+    "provinciaCodigo": "1",
+    "areaKm2": 342.56
+  },
+  {
+    "codigo": "113",
+    "nombre": "Tibás",
+    "provinciaCodigo": "1",
+    "areaKm2": 8.27
+  },
+  {
+    "codigo": "114",
+    "nombre": "Moravia",
+    "provinciaCodigo": "1",
+    "areaKm2": 28.82
+  },
+  {
+    "codigo": "115",
+    "nombre": "Montes de Oca",
+    "provinciaCodigo": "1",
+    "areaKm2": 15.78
+  },
+  {
+    "codigo": "116",
+    "nombre": "Turrubares",
+    "provinciaCodigo": "1",
+    "areaKm2": 416.25
+  },
+  {
+    "codigo": "117",
+    "nombre": "Dota",
+    "provinciaCodigo": "1",
+    "areaKm2": 404.44
+  },
+  {
+    "codigo": "118",
+    "nombre": "Curridabat",
+    "provinciaCodigo": "1",
+    "areaKm2": 16.06
+  },
+  {
+    "codigo": "119",
+    "nombre": "Pérez Zeledón",
+    "provinciaCodigo": "1",
+    "areaKm2": 1901.08
+  },
+  {
+    "codigo": "120",
+    "nombre": "León Cortés Castro",
+    "provinciaCodigo": "1",
+    "areaKm2": 121.89
+  },
+  {
+    "codigo": "201",
+    "nombre": "Alajuela",
+    "provinciaCodigo": "2",
+    "areaKm2": 391.62
+  },
+  {
+    "codigo": "202",
+    "nombre": "San Ramón",
+    "provinciaCodigo": "2",
+    "areaKm2": 1021.74
+  },
+  {
+    "codigo": "203",
+    "nombre": "Grecia",
+    "provinciaCodigo": "2",
+    "areaKm2": 142.47
+  },
+  {
+    "codigo": "204",
+    "nombre": "San Mateo",
+    "provinciaCodigo": "2",
+    "areaKm2": 125.03
+  },
+  {
+    "codigo": "205",
+    "nombre": "Atenas",
+    "provinciaCodigo": "2",
+    "areaKm2": 126.31
+  },
+  {
+    "codigo": "206",
+    "nombre": "Naranjo",
+    "provinciaCodigo": "2",
+    "areaKm2": 127.01
+  },
+  {
+    "codigo": "207",
+    "nombre": "Palmares",
+    "provinciaCodigo": "2",
+    "areaKm2": 38.94
+  },
+  {
+    "codigo": "208",
+    "nombre": "Poás",
+    "provinciaCodigo": "2",
+    "areaKm2": 74.48
+  },
+  {
+    "codigo": "209",
+    "nombre": "Orotina",
+    "provinciaCodigo": "2",
+    "areaKm2": 145.11
+  },
+  {
+    "codigo": "210",
+    "nombre": "San Carlos",
+    "provinciaCodigo": "2",
+    "areaKm2": 3352.15
+  },
+  {
+    "codigo": "211",
+    "nombre": "Zarcero",
+    "provinciaCodigo": "2",
+    "areaKm2": 157.36
+  },
+  {
+    "codigo": "212",
+    "nombre": "Sarchí",
+    "provinciaCodigo": "2",
+    "areaKm2": 136.76
+  },
+  {
+    "codigo": "213",
+    "nombre": "Upala",
+    "provinciaCodigo": "2",
+    "areaKm2": 1592.67
+  },
+  {
+    "codigo": "214",
+    "nombre": "Los Chiles",
+    "provinciaCodigo": "2",
+    "areaKm2": 1332.71
+  },
+  {
+    "codigo": "215",
+    "nombre": "Guatuso",
+    "provinciaCodigo": "2",
+    "areaKm2": 752.83
+  },
+  {
+    "codigo": "216",
+    "nombre": "Río Cuarto",
+    "provinciaCodigo": "2",
+    "areaKm2": 254.89
+  },
+  {
+    "codigo": "301",
+    "nombre": "Cartago",
+    "provinciaCodigo": "3",
+    "areaKm2": 278.63
+  },
+  {
+    "codigo": "302",
+    "nombre": "Paraíso",
+    "provinciaCodigo": "3",
+    "areaKm2": 476.99
+  },
+  {
+    "codigo": "303",
+    "nombre": "La Unión",
+    "provinciaCodigo": "3",
+    "areaKm2": 44.18
+  },
+  {
+    "codigo": "304",
+    "nombre": "Jiménez",
+    "provinciaCodigo": "3",
+    "areaKm2": 250.07
+  },
+  {
+    "codigo": "305",
+    "nombre": "Turrialba",
+    "provinciaCodigo": "3",
+    "areaKm2": 1589.25
+  },
+  {
+    "codigo": "306",
+    "nombre": "Alvarado",
+    "provinciaCodigo": "3",
+    "areaKm2": 79.18
+  },
+  {
+    "codigo": "307",
+    "nombre": "Oreamuno",
+    "provinciaCodigo": "3",
+    "areaKm2": 202.9
+  },
+  {
+    "codigo": "308",
+    "nombre": "El Guarco",
+    "provinciaCodigo": "3",
+    "areaKm2": 172
+  },
+  {
+    "codigo": "401",
+    "nombre": "Heredia",
+    "provinciaCodigo": "4",
+    "areaKm2": 283.11
+  },
+  {
+    "codigo": "402",
+    "nombre": "Barva",
+    "provinciaCodigo": "4",
+    "areaKm2": 56.01
+  },
+  {
+    "codigo": "403",
+    "nombre": "Santo Domingo",
+    "provinciaCodigo": "4",
+    "areaKm2": 25.4
+  },
+  {
+    "codigo": "404",
+    "nombre": "Santa Bárbara",
+    "provinciaCodigo": "4",
+    "areaKm2": 52.1
+  },
+  {
+    "codigo": "405",
+    "nombre": "San Rafael",
+    "provinciaCodigo": "4",
+    "areaKm2": 48.31
+  },
+  {
+    "codigo": "406",
+    "nombre": "San Isidro",
+    "provinciaCodigo": "4",
+    "areaKm2": 26.67
+  },
+  {
+    "codigo": "407",
+    "nombre": "Belén",
+    "provinciaCodigo": "4",
+    "areaKm2": 12.38
+  },
+  {
+    "codigo": "408",
+    "nombre": "Flores",
+    "provinciaCodigo": "4",
+    "areaKm2": 6.75
+  },
+  {
+    "codigo": "409",
+    "nombre": "San Pablo",
+    "provinciaCodigo": "4",
+    "areaKm2": 8.34
+  },
+  {
+    "codigo": "410",
+    "nombre": "Sarapiquí",
+    "provinciaCodigo": "4",
+    "areaKm2": 2144.26
+  },
+  {
+    "codigo": "501",
+    "nombre": "Liberia",
+    "provinciaCodigo": "5",
+    "areaKm2": 1442.17
+  },
+  {
+    "codigo": "502",
+    "nombre": "Nicoya",
+    "provinciaCodigo": "5",
+    "areaKm2": 1337.57
+  },
+  {
+    "codigo": "503",
+    "nombre": "Santa Cruz",
+    "provinciaCodigo": "5",
+    "areaKm2": 1320.81
+  },
+  {
+    "codigo": "504",
+    "nombre": "Bagaces",
+    "provinciaCodigo": "5",
+    "areaKm2": 1277.93
+  },
+  {
+    "codigo": "505",
+    "nombre": "Carrillo",
+    "provinciaCodigo": "5",
+    "areaKm2": 599.01
+  },
+  {
+    "codigo": "506",
+    "nombre": "Cañas",
+    "provinciaCodigo": "5",
+    "areaKm2": 687.05
+  },
+  {
+    "codigo": "507",
+    "nombre": "Abangares",
+    "provinciaCodigo": "5",
+    "areaKm2": 646.02
+  },
+  {
+    "codigo": "508",
+    "nombre": "Tilarán",
+    "provinciaCodigo": "5",
+    "areaKm2": 669.23
+  },
+  {
+    "codigo": "509",
+    "nombre": "Nandayure",
+    "provinciaCodigo": "5",
+    "areaKm2": 568.14
+  },
+  {
+    "codigo": "510",
+    "nombre": "La Cruz",
+    "provinciaCodigo": "5",
+    "areaKm2": 1385.4
+  },
+  {
+    "codigo": "511",
+    "nombre": "Hojancha",
+    "provinciaCodigo": "5",
+    "areaKm2": 262.99
+  },
+  {
+    "codigo": "601",
+    "nombre": "Puntarenas",
+    "provinciaCodigo": "6",
+    "areaKm2": 1786.4
+  },
+  {
+    "codigo": "602",
+    "nombre": "Esparza",
+    "provinciaCodigo": "6",
+    "areaKm2": 217.23
+  },
+  {
+    "codigo": "603",
+    "nombre": "Buenos Aires",
+    "provinciaCodigo": "6",
+    "areaKm2": 2382.94
+  },
+  {
+    "codigo": "604",
+    "nombre": "Montes de Oro",
+    "provinciaCodigo": "6",
+    "areaKm2": 247.59
+  },
+  {
+    "codigo": "605",
+    "nombre": "Osa",
+    "provinciaCodigo": "6",
+    "areaKm2": 1932.7
+  },
+  {
+    "codigo": "606",
+    "nombre": "Quepos",
+    "provinciaCodigo": "6",
+    "areaKm2": 557.85
+  },
+  {
+    "codigo": "607",
+    "nombre": "Golfito",
+    "provinciaCodigo": "6",
+    "areaKm2": 1032.32
+  },
+  {
+    "codigo": "608",
+    "nombre": "Coto Brus",
+    "provinciaCodigo": "6",
+    "areaKm2": 944.24
+  },
+  {
+    "codigo": "609",
+    "nombre": "Parrita",
+    "provinciaCodigo": "6",
+    "areaKm2": 483.22
+  },
+  {
+    "codigo": "610",
+    "nombre": "Corredores",
+    "provinciaCodigo": "6",
+    "areaKm2": 623.61
+  },
+  {
+    "codigo": "611",
+    "nombre": "Garabito",
+    "provinciaCodigo": "6",
+    "areaKm2": 316.01
+  },
+  {
+    "codigo": "612",
+    "nombre": "Monteverde",
+    "provinciaCodigo": "6",
+    "areaKm2": 53.47
+  },
+  {
+    "codigo": "613",
+    "nombre": "Puerto Jimenez",
+    "provinciaCodigo": "6",
+    "areaKm2": 720.43
+  },
+  {
+    "codigo": "701",
+    "nombre": "Limón",
+    "provinciaCodigo": "7",
+    "areaKm2": 1769.38
+  },
+  {
+    "codigo": "702",
+    "nombre": "Pococí",
+    "provinciaCodigo": "7",
+    "areaKm2": 2188.19
+  },
+  {
+    "codigo": "703",
+    "nombre": "Siquirres",
+    "provinciaCodigo": "7",
+    "areaKm2": 855.15
+  },
+  {
+    "codigo": "704",
+    "nombre": "Talamanca",
+    "provinciaCodigo": "7",
+    "areaKm2": 2792.23
+  },
+  {
+    "codigo": "705",
+    "nombre": "Matina",
+    "provinciaCodigo": "7",
+    "areaKm2": 770.4
+  },
+  {
+    "codigo": "706",
+    "nombre": "Guácimo",
+    "provinciaCodigo": "7",
+    "areaKm2": 801.56
+  }
+]

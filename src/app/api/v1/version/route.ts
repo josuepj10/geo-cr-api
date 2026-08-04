@@ -1,25 +1,33 @@
-﻿export const dynamic = "force-static";
+﻿import { NextResponse } from "next/server";
 
-export async function GET(): Promise<Response> {
-  return Response.json(
+import {
+  cacheHeaders,
+  catalogMetadata,
+} from "@/lib/catalog";
+
+export async function GET(): Promise<NextResponse> {
+  return NextResponse.json(
     {
       data: {
         apiVersion: "v1",
         projectVersion: "0.1.0",
-        catalogVersion: null,
-        catalogStatus: "pending",
+        catalogVersion:
+          catalogMetadata.catalogVersion,
+        catalogStatus: "ready",
+        counts: catalogMetadata.counts,
       },
       metadata: {
         service: "geo-cr-api",
-        source: "IGN/SNIT",
+        source:
+          catalogMetadata.source.institution,
+        dataset:
+          catalogMetadata.source.dataset,
         officialService: false,
       },
     },
     {
       status: 200,
-      headers: {
-        "Cache-Control": "public, max-age=3600, s-maxage=3600",
-      },
+      headers: cacheHeaders,
     }
   );
 }
