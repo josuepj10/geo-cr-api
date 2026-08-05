@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: dta-update-check
@@ -40,10 +41,24 @@ jobs:
         id: status
         shell: bash
         run: |
-          echo "update_available=$(node -p "require('./data/generated/update-status.json').updateAvailable")" >> "$GITHUB_OUTPUT"
-          echo "latest_version=$(node -p "require('./data/generated/update-status.json').latestAvailableVersion")" >> "$GITHUB_OUTPUT"
+          node <<'NODE'
+          const fs = require("node:fs");
 
-      - name: Commit check result
+          const status = JSON.parse(
+            fs.readFileSync(
+              "data/generated/update-status.json",
+              "utf8"
+            )
+          );
+
+          fs.appendFileSync(
+            process.env.GITHUB_OUTPUT,
+            `update_available=${status.updateAvailable}\n` +
+            `latest_version=${status.latestAvailableVersion ?? "unknown"}\n`
+          );
+          NODE
+
+      - name: Persist check status on main
         shell: bash
         run: |
           git config user.name "geo-cr-api-bot"
@@ -63,3 +78,32 @@ jobs:
           fi
 
           git push origin HEAD:main
+
+      - name: Prepare DTA update
+        if: ${{ steps.status.outputs.update_available == 'true' }}
+        run: npm run prepare:dta-update
+
+      - name: Validate prepared update
+        if: ${{ steps.status.outputs.update_available == 'true' }}
+        run: |
+          npm run lint
+          npm run build
+
+      - name: Create update pull request
+        if: ${{ steps.status.outputs.update_available == 'true' }}
+        uses: peter-evans/create-pull-request@v8
+        with:
+          base: main
+          branch: automated/dta-update
+          delete-branch: true
+          draft: always-true
+          commit-message: "chore: preparar actualización ${{ steps.status.outputs.latest_version }}"
+          title: "chore: actualizar catálogo a ${{ steps.status.outputs.latest_version }}"
+          body-path: data/generated/UPDATE_REPORT.md
+          add-paths: |
+            data/generated/provincias.json
+            data/generated/cantones.json
+            data/generated/distritos.json
+            data/generated/metadata.json
+            data/generated/update-status.json
+            data/generated/UPDATE_REPORT.md

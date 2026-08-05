@@ -10,7 +10,8 @@
     "import:dta": "tsx scripts/import-dta.ts",
     "test": "vitest run",
     "test:watch": "vitest",
-    "check:dta": "tsx scripts/check-dta-update.ts"
+    "check:dta": "tsx scripts/check-dta-update.ts",
+    "prepare:dta-update": "tsx scripts/prepare-dta-update.ts"
   },
   "dependencies": {
     "next": "16.3.0",

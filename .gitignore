@@ -42,3 +42,5 @@ next-env.d.ts
 
 # Archivos originales del IGN/SNIT
 data/source/*.xlsx
+
+data/update-candidate/
