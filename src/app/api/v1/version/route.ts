@@ -10,7 +10,7 @@ export async function GET(): Promise<NextResponse> {
     {
       data: {
         apiVersion: "v1",
-        projectVersion: "0.1.0",
+        projectVersion: "0.2.0",
         catalogVersion:
           catalogMetadata.catalogVersion,
         catalogStatus: "ready",
@@ -31,3 +31,4 @@ export async function GET(): Promise<NextResponse> {
     }
   );
 }
+

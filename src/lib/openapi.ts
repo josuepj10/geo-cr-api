@@ -72,6 +72,20 @@ export const openApiDocument = {
         },
       },
     },
+    "/api/v1/actualizacion": {
+      get: {
+        tags: ["Sistema"],
+        summary:
+          "Consultar el estado de actualización del catálogo",
+        responses: {
+          "200": {
+            description:
+              "Estado de la última comprobación de la fuente oficial",
+            content: jsonContent,
+          },
+        },
+      },
+    },
     "/api/v1/provincias": {
       get: {
         tags: ["Provincias"],
