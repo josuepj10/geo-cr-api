@@ -62,13 +62,15 @@ export default function Home() {
             DTA 2026
           </span>
 
-          <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-6xl">
-            Geo CR API
+          <h1 className="mt-6 max-w-4xl text-4xl font-bold tracking-tight sm:text-6xl">
+            API de provincias, cantones y distritos de Costa Rica
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            API pública para consultar provincias,
-            cantones y distritos de Costa Rica.
+            Consulte gratuitamente la División Territorial
+            Administrativa de Costa Rica mediante una API REST
+            pública con respuestas JSON, códigos territoriales,
+            búsqueda y documentación OpenAPI.
           </p>
 
           <p className="mt-3 max-w-3xl text-sm text-slate-400">
@@ -103,7 +105,7 @@ export default function Home() {
           </div>
         </div>
 
-                <section className="mb-12 rounded-xl border border-slate-800 bg-slate-900/60 p-6">
+        <section className="mb-12 rounded-xl border border-slate-800 bg-slate-900/60 p-6">
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
               <p className="text-sm font-medium uppercase tracking-wide text-slate-400">
@@ -236,6 +238,125 @@ console.log(result.data);`}
           </pre>
         </section>
       </div>
+      <section className="mt-12">
+        <h2 className="text-2xl font-semibold">
+          API territorial de Costa Rica
+        </h2>
+
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
+          <article className="rounded-xl border border-slate-800 bg-slate-900/60 p-6">
+            <h3 className="text-lg font-semibold">
+              Provincias, cantones y distritos
+            </h3>
+
+            <p className="mt-3 text-sm leading-6 text-slate-400">
+              Geo CR API permite consultar la organización
+              territorial de Costa Rica utilizando los códigos
+              oficiales de provincia, cantón y distrito.
+            </p>
+          </article>
+
+          <article className="rounded-xl border border-slate-800 bg-slate-900/60 p-6">
+            <h3 className="text-lg font-semibold">
+              Integración mediante JSON
+            </h3>
+
+            <p className="mt-3 text-sm leading-6 text-slate-400">
+              Puede utilizar la API desde aplicaciones web,
+              tiendas en línea, sistemas empresariales,
+              formularios, plataformas educativas y servicios
+              de logística.
+            </p>
+          </article>
+
+          <article className="rounded-xl border border-slate-800 bg-slate-900/60 p-6">
+            <h3 className="text-lg font-semibold">
+              División Territorial Administrativa
+            </h3>
+
+            <p className="mt-3 text-sm leading-6 text-slate-400">
+              El catálogo se deriva de información publicada
+              por el Instituto Geográfico Nacional y el Sistema
+              Nacional de Información Territorial de Costa Rica.
+            </p>
+          </article>
+
+          <article className="rounded-xl border border-slate-800 bg-slate-900/60 p-6">
+            <h3 className="text-lg font-semibold">
+              Gratuita y de código abierto
+            </h3>
+
+            <p className="mt-3 text-sm leading-6 text-slate-400">
+              La API puede consultarse públicamente sin crear
+              una cuenta y su código fuente está disponible
+              para revisión y contribuciones en GitHub.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section className="mt-12">
+        <h2 className="text-2xl font-semibold">
+          Preguntas frecuentes
+        </h2>
+
+        <div className="mt-6 space-y-4">
+          <article className="rounded-xl border border-slate-800 bg-slate-900/60 p-6">
+            <h3 className="font-semibold">
+              ¿Cómo obtener las provincias de Costa Rica?
+            </h3>
+
+            <p className="mt-2 text-sm leading-6 text-slate-400">
+              Consulte el endpoint
+              <code className="mx-1 text-emerald-300">
+                /api/v1/provincias
+              </code>
+              para obtener las provincias disponibles en formato JSON.
+            </p>
+          </article>
+
+          <article className="rounded-xl border border-slate-800 bg-slate-900/60 p-6">
+            <h3 className="font-semibold">
+              ¿Cómo obtener los cantones de una provincia?
+            </h3>
+
+            <p className="mt-2 text-sm leading-6 text-slate-400">
+              Utilice
+              <code className="mx-1 text-emerald-300">
+                /api/v1/provincias/&#123;codigo&#125;/cantones
+              </code>
+              indicando el código de la provincia.
+            </p>
+          </article>
+
+          <article className="rounded-xl border border-slate-800 bg-slate-900/60 p-6">
+            <h3 className="font-semibold">
+              ¿Cómo obtener los distritos de un cantón?
+            </h3>
+
+            <p className="mt-2 text-sm leading-6 text-slate-400">
+              Consulte
+              <code className="mx-1 text-emerald-300">
+                /api/v1/cantones/&#123;codigo&#125;/distritos
+              </code>
+              para obtener los distritos asociados.
+            </p>
+          </article>
+
+          <article className="rounded-xl border border-slate-800 bg-slate-900/60 p-6">
+            <h3 className="font-semibold">
+              ¿Geo CR API es una API oficial del Gobierno?
+            </h3>
+
+            <p className="mt-2 text-sm leading-6 text-slate-400">
+              No. Geo CR API es un proyecto independiente que
+              procesa información derivada de fuentes del
+              IGN/SNIT para facilitar su consumo mediante una API.
+            </p>
+          </article>
+        </div>
+      </section>
+
     </main>
   );
 }
