@@ -32,5 +32,8 @@
     "typescript": "^5",
     "vitest": "^4.1.10",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "overrides": {
+    "js-yaml": "4.3.1"
   }
 }
